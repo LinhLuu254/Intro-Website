@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Eden Garden</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="android-chrome" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="android-chrome" sizes="512x512" href="favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous">
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <script src="enabler.js" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+
+</head>
+<body>
+    <div class="container-fluid mb-0" id="header" >
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid" id="header">
+                <a class="navbar-brand" href="#"><img src="./images/logo-EDENS.jpg" alt="" width="80" height="80"></i></a>
+                <button class="navbar-toggler" style="color: rgb(236, 233, 184);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: rgb(236, 233, 184);"><i class="bi bi-border-width"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "  href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "   href="handbook.html" target="_blank">Request a Handbook</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="search..." aria-label="Search">
+                        <button class="btn btn-success" type="button" id="myBtn"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>  
+            </div>
+          </nav>
+        
+    </div>
+    <div class="container-fluid m-0 p-3 text-center" id="handbook">
+    </div>
+    <div class="container-fluid">
+        <div class="row-cols p-2 ">
+            <div class="col tooltip-area d-flex">
+                <div class="m-2">
+                    <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="right"
+                        title="Roses Handbook">
+                        <img src="images/handbook.jpg" style="width: 200px; height: 300px;"/>
+                    </span>   
+                </div>  
+                <div class="m-2">
+                    <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="right"
+                        title="Roses Handbook">
+                        <img src="images/handbook1.png" style="width: 200px; height: 300px;"/>
+                    </span>   
+                </div>
+                <div class="m-2">
+                    <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="right"
+                        title="Roses Handbook">
+                        <img src="images/handbook2.png" style="width: 200px; height: 300px;"/>
+                    </span>   
+                </div>
+                <div class="col-md-4 p-3">
+                    <h2>Handbook of Roses 2023</h2>
+                    <p>An inspirational guide for expert and novice gardeners alike, the 2023 Eden Garden Handbook of Roses features our best and most coveted rose varieties. Be inspired by the beautiful imagery and use the helpful planting advice to begin to plan your next garden project. Choose your next English Rose using our easy to follow Handbook and enjoy fragrance and color within your garden for years to come.</p>
+                    <p>Our handbook will take up to 4 weeks to arrive once despatched.</p>
+                </div> 
+            </div>  
+        </div>
+        <div id="title"><h3>Where would you like your handbook to be sent?</h3></div>
+        <div id="form">
+            <div class="row-cols p-3 d-flex">
+                <div class="col-md-5 m-2">
+                    <label for="inputFirstName" class="form-label">First Name</label>
+                    <input type="email" class="form-control" id="inputFirstName">
+                </div>
+                <div class="col-md-5 m-2">
+                    <label for="inputLastName" class="form-label">Last Name</label>
+                    <input type="password" class="form-control" id="inputLastName">
+                </div>
+            </div>
+            <div class="row-cols p-3">
+                <div class="col-md-8">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <br>
+                <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <br>
+                <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+                </div>
+                <br>
+                <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+                </div>
+                <br>
+                <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+                </div>
+                <br>
+                <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        I would like to receive exclusive rose care advice, inspiration and special offers by email.
+                        You can opt out at anytime. Click here to see our privacy policy in full.
+                    </label>
+                </div>
+                <br>
+                <br>
+                </div>
+                <div class="col-12 btn-floating">
+                <button type="submit" class="btn btn-success">Request Handbook</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <div class="text-center text-dark p-3" style="background-color: rgb(113, 141, 132);">
+          © 2023 Citation:
+          <a class="text-dark" href="https://www.davidaustinroses.com//" target="_blank">davidaustinroses.com</a>
+        </div>
+    </footer>
+</body>
+</html>
